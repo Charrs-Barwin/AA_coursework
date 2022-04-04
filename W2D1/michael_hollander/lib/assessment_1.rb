@@ -12,9 +12,7 @@ def nor_select(arr,p1,p2)
 end
 
 def array_of_hash_sum(hashes)
-    sum = 0
-    hashes.each{|h|sum += h.each_value.sum}
-    sum
+    hashes.sum{|h|h.values.sum}
 end
 
 def slangify(sentence)
